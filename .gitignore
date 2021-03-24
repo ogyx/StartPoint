@@ -27,7 +27,7 @@
 *.lib
 
 # Executables
-*.exe
+#*.exe
 *.out
 *.app
 
@@ -38,3 +38,6 @@ bin-int/
 
 # files
 *.user
+
+# except below stuff!!!!!
+#!vendor/
