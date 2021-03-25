@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace DotEngine
 {
     class DOTENGINE_API WindowResizeEvent : public Event

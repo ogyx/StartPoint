@@ -1,3 +1,4 @@
+#include "dotpch.h"
 #include "Application.h"
 
 #include "DotEngine/Events/ApplicationEvent.h"

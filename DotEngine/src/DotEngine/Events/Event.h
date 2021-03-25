@@ -1,9 +1,6 @@
 #pragma once
-
+#include "dotpch.h"
 #include "DotEngine/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace DotEngine
 {

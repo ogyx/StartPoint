@@ -18,6 +18,9 @@ project "DotEngine"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+    pchheader "dotpch.h"
+    pchsource "DotEngine/src/dotpch.cpp"
+
     files
     {
         "%{prj.name}/src/**.h",
