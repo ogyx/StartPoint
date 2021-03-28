@@ -37,6 +37,12 @@
     <ClInclude Include="src\DotEngine\Events\MouseEvent.h">
       <Filter>DotEngine\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\DotEngine\Layer.h">
+      <Filter>DotEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DotEngine\LayerStack.h">
+      <Filter>DotEngine</Filter>
+    </ClInclude>
     <ClInclude Include="src\DotEngine\Log.h">
       <Filter>DotEngine</Filter>
     </ClInclude>
@@ -50,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\DotEngine\Application.cpp">
+      <Filter>DotEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DotEngine\Layer.cpp">
+      <Filter>DotEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DotEngine\LayerStack.cpp">
       <Filter>DotEngine</Filter>
     </ClCompile>
     <ClCompile Include="src\DotEngine\Log.cpp">

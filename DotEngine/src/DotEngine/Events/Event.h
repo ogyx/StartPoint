@@ -44,8 +44,8 @@ namespace DotEngine
             return GetCategoryFlags() & category;
         }
 
-    protected:
         bool m_Handled = false;
+    protected:
     };
 
     class DOTENGINE_API EventDispatcher

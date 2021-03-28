@@ -2,6 +2,7 @@
 
 // for usage by DotEngine applications
 #include "DotEngine/Application.h"
+#include "DotEngine/Layer.h"
 #include "DotEngine/Log.h"
 
 

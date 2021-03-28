@@ -65,14 +65,17 @@ project "DotEngine"
     
     filter "configurations:Debug"
         defines "DOT_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
 
     filter "configurations:Debug"
         defines "DOT_RELEASE"
+        buildoptions "/MD"
         optimize "On"
     
     filter "configurations:Dist"
         defines "DOT_DIST"
+        buildoptions "/MD"
         optimize "On"
 
 project "Sandbox"
@@ -112,12 +115,15 @@ project "Sandbox"
 
         filter "configurations:Debug"
             defines "DOT_DEBUG"
+            buildoptions "/MDd"
             symbols "On"
 
         filter "configurations:Debug"
             defines "DOT_RELEASE"
+            buildoptions "/MD"
             optimize "On"
         
         filter "configurations:Dist"
             defines "DOT_DIST"
+            buildoptions "/MD"
             optimize "On"
