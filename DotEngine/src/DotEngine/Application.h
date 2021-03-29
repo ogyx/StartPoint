@@ -21,6 +21,9 @@ namespace DotEngine
 
 		void PushLayer(Layer* layer);
 		void PushOverLayer(Layer* layer);
+
+		inline static Application& Get() { return *s_Instance; }
+		inline Window& GetWindow() { return *m_Window; }
     private:
 		bool OnWindowClosed(WindowCloseEvent& e);
 
@@ -28,6 +31,9 @@ namespace DotEngine
         bool m_Running = true;
 
 		LayerStack m_LayerStack;
+
+	private:
+		static Application* s_Instance;
 	};
 
 	// created in the client!

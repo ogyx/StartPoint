@@ -15,9 +15,11 @@ outputdir = "%{cfg.buldcfg}-%{cfg.system}-%{cfg.architecture}"
 IncludeDir = {}
 IncludeDir["GLFW"] = "DotEngine/vendor/GLFW/include"
 IncludeDir["Glad"] = "DotEngine/vendor/Glad/include"
+IncludeDir["ImGui"] = "DotEngine/vendor/imgui"
 
 include "DotEngine/vendor/GLFW"
 include "DotEngine/vendor/Glad"
+include "DotEngine/vendor/imgui"
 
 project "DotEngine"
     location "DotEngine"
@@ -41,13 +43,15 @@ project "DotEngine"
         "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include",
         "%{IncludeDir.GLFW}",
-		"%{IncludeDir.Glad}"
+		"%{IncludeDir.Glad}",
+		"%{IncludeDir.ImGui}"
     }
 
     links
     {
         "GLFW",
 		"Glad",
+		"ImGui",
         "opengl32.lib"
     }
     

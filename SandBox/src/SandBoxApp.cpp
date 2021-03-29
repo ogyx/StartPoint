@@ -31,6 +31,7 @@ public:
 	SandBox() 
 	{
 		PushLayer(new ExampleLayer());
+		PushOverLayer(new DotEngine::ImGuiLayer());
 	}
 
 	~SandBox() 

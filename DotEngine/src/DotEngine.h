@@ -4,6 +4,7 @@
 #include "DotEngine/Application.h"
 #include "DotEngine/Layer.h"
 #include "DotEngine/Log.h"
+#include "DotEngine/ImGui/ImGuiLayer.h"
 
 
 // ------------------Entry Point------------------Start-
